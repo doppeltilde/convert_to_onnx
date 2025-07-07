@@ -17,20 +17,13 @@ This project provides a Streamlit application that converts Hugging Face models 
 
 ## Installation
 
-1. Clone the repository:
+1. Create a `.streamlit` directory.
 
-   ```bash
-   git clone https://github.com/doppeltilde/convert_to_onnx
-   cd convert_to_onnx
-   ```
+2. Inside of the `.streamlit` directory, create a `secrets.toml` file.
 
-2. Create a `.streamlit` directory.
+3. Inside of the `secrets.toml` file, add a line with your Hugging Face write access API token: `HF_TOKEN="yourToken"`.
 
-3. Inside of the `.streamlit` directory, create a `secrets.toml` file.
-
-4. Inside of the `secrets.toml` file, add a line with your Hugging Face write access API token: `HF_TOKEN="yourToken"`.
-
-3. Run the [docker-compose.yml](https://github.com/doppeltilde/convert_to_onnx/blob/main/docker-compose.yml).
+4. Run the [docker-compose.yml](https://github.com/doppeltilde/convert_to_onnx/blob/main/docker-compose.yml).
 
    ```yml
    services:
