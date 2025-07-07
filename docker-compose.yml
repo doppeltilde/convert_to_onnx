@@ -1,0 +1,10 @@
+services:
+  vision_classification:
+    image: ghcr.io/doppeltilde/convert_to_onnx:latest
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/root/.cache/huggingface/hub:rw
+    environment:
+      - HF_TOKEN
+    restart: unless-stopped

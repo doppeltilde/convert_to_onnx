@@ -1,0 +1,4 @@
+.venv
+.streamlit
+transformers.js
+models

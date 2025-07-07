@@ -1,0 +1,12 @@
+services:
+  vision_classification:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/root/.cache/huggingface/hub:rw
+    environment:
+      - HF_TOKEN
+    restart: unless-stopped
